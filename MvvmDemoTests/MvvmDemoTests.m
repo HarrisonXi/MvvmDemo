@@ -25,6 +25,13 @@
     [super tearDown];
 }
 
+- (void)testTextToInputStateConvert {
+    NSAssert(InputStateValid == [TextToInputStateConverter inputStateForText:@"aaa" minimum:3 maximum:3], @"Error");
+    NSAssert(InputStateInvalid == [TextToInputStateConverter inputStateForText:@"aaa" minimum:4 maximum:5], @"Error");
+    NSAssert(InputStateEmpty == [TextToInputStateConverter inputStateForText:nil minimum:3 maximum:3], @"Error");
+    NSAssert(InputStateEmpty == [TextToInputStateConverter inputStateForText:@"" minimum:3 maximum:3], @"Error");
+}
+
 - (void)testLoginEnabled {
     ViewModel *viewModel = [ViewModel new];
     viewModel.username = @"aaaa";

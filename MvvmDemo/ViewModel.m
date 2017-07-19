@@ -38,16 +38,21 @@
     NSAssert(minimum > 0, @"TextToInputStateConverter: minimum must be greater than zero");
     NSAssert(maximum >= minimum, @"TextToInputStateConverter: maximum must be greater than or equal to minimum");
     return [signal map:^id(NSString *text) {
-        if ([text length] >= minimum && [text length] <= maximum) {
-            return @(InputStateValid);
-        } else {
-            if ([text length] == 0) {
-                return @(InputStateEmpty);
-            } else {
-                return @(InputStateInvalid);
-            }
-        }
+        return @([TextToInputStateConverter inputStateForText:text minimum:minimum maximum:maximum]);
     }];
+}
+
++ (InputState)inputStateForText:(NSString *)text minimum:(NSInteger)minimum maximum:(NSInteger)maximum
+{
+    if ([text length] >= minimum && [text length] <= maximum) {
+        return InputStateValid;
+    } else {
+        if ([text length] == 0) {
+            return InputStateEmpty;
+        } else {
+            return InputStateInvalid;
+        }
+    }
 }
 
 @end

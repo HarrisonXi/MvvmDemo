@@ -29,6 +29,7 @@ typedef enum : NSUInteger {
 @interface TextToInputStateConverter : NSObject
 
 + (RACSignal *)convert:(RACSignal *)signal minimum:(NSInteger)minimum maximum:(NSInteger)maximum;
++ (InputState)inputStateForText:(NSString *)text minimum:(NSInteger)minimum maximum:(NSInteger)maximum;
 
 @end
 
