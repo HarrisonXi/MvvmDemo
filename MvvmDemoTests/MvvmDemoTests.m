@@ -26,10 +26,19 @@
 }
 
 - (void)testTextToInputStateConvert {
-    NSAssert(InputStateValid == [TextToInputStateConverter inputStateForText:@"aaa" minimum:3 maximum:3], @"Error");
-    NSAssert(InputStateInvalid == [TextToInputStateConverter inputStateForText:@"aaa" minimum:4 maximum:5], @"Error");
-    NSAssert(InputStateEmpty == [TextToInputStateConverter inputStateForText:nil minimum:3 maximum:3], @"Error");
-    NSAssert(InputStateEmpty == [TextToInputStateConverter inputStateForText:@"" minimum:3 maximum:3], @"Error");
+    RACSubject *subject = [RACSubject subject];
+    RACSignal *convert = [TextToInputStateConverter convert:subject minimum:3 maximum:3];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [subject sendNext:@"aaa"];
+    });
+    NSNumber *result = [convert asynchronousFirstOrDefault:nil success:nil error:nil];
+    NSAssert(InputStateValid == [result unsignedIntegerValue], @"Error");
+    convert = [TextToInputStateConverter convert:subject minimum:4 maximum:5];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [subject sendNext:@"aaa"];
+    });
+    result = [convert asynchronousFirstOrDefault:nil success:nil error:nil];
+    NSAssert(InputStateInvalid == [result unsignedIntegerValue], @"Error");
 }
 
 - (void)testLoginEnabled {
