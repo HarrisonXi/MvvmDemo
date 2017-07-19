@@ -31,6 +31,27 @@
 
 @end
 
+@implementation TextToInputStateConverter
+
++ (RACSignal *)convert:(RACSignal *)signal minimum:(NSInteger)minimum maximum:(NSInteger)maximum
+{
+    NSAssert(minimum > 0, @"TextToInputStateConverter: minimum must be greater than zero");
+    NSAssert(maximum >= minimum, @"TextToInputStateConverter: maximum must be greater than or equal to minimum");
+    return [signal map:^id(NSString *text) {
+        if ([text length] >= minimum && [text length] <= maximum) {
+            return @(InputStateValid);
+        } else {
+            if ([text length] == 0) {
+                return @(InputStateEmpty);
+            } else {
+                return @(InputStateInvalid);
+            }
+        }
+    }];
+}
+
+@end
+
 @interface ViewModel ()
 
 @property (nonatomic, assign, readwrite) InputState usernameInputState;
@@ -44,29 +65,9 @@
 - (instancetype)init
 {
     if (self = [super init]) {
-        RAC(self, usernameInputState) = [RACObserve(self, username) map:^id(NSString *username) {
-            if ([username length] >= 4 && [username length] <= 16) {
-                return @(InputStateValid);
-            } else {
-                if ([username length] == 0) {
-                    return @(InputStateEmpty);
-                } else {
-                    return @(InputStateInvalid);
-                }
-            }
-        }];
+        RAC(self, usernameInputState) = ConvertTextToInputState(RACObserve(self, username), 4, 16);
         
-        RAC(self, passwordInputState) = [RACObserve(self, password) map:^id(NSString *password) {
-            if ([password length] >= 8 && [password length] <= 16) {
-                return @(InputStateValid);
-            } else {
-                if ([password length] == 0) {
-                    return @(InputStateEmpty);
-                } else {
-                    return @(InputStateInvalid);
-                }
-            }
-        }];
+        RAC(self, passwordInputState) = ConvertTextToInputState(RACObserve(self, password), 8, 16);;
         
         RAC(self, loginEnabled) = [RACSignal combineLatest:@[RACObserve(self, usernameInputState),
                                                              RACObserve(self, passwordInputState)]

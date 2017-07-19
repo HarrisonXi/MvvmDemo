@@ -24,6 +24,14 @@ typedef enum : NSUInteger {
 
 @end
 
+#define ConvertTextToInputState(signal, minimum, maximum) [TextToInputStateConverter convert:signal m##inimum:minimum m##aximum:maximum]
+
+@interface TextToInputStateConverter : NSObject
+
++ (RACSignal *)convert:(RACSignal *)signal minimum:(NSInteger)minimum maximum:(NSInteger)maximum;
+
+@end
+
 @interface ViewModel : NSObject
 
 @property (nonatomic, assign, readonly) InputState usernameInputState;
