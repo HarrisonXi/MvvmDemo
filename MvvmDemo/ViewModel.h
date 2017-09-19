@@ -38,6 +38,7 @@ typedef enum : NSUInteger {
 @property (nonatomic, assign, readonly) InputState usernameInputState;
 @property (nonatomic, assign, readonly) InputState passwordInputState;
 @property (nonatomic, assign, readonly) BOOL loginEnabled;
+@property (nonatomic, strong, readonly) RACCommand *loginCommand;
 
 @property (nonatomic, copy) NSString *username;
 @property (nonatomic, copy) NSString *password;

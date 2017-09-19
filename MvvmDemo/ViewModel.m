@@ -62,6 +62,7 @@
 @property (nonatomic, assign, readwrite) InputState usernameInputState;
 @property (nonatomic, assign, readwrite) InputState passwordInputState;
 @property (nonatomic, assign, readwrite) BOOL loginEnabled;
+@property (nonatomic, strong, readwrite) RACCommand *loginCommand;
 
 @end
 
@@ -85,6 +86,22 @@
                                                             return @(NO);
                                                         }
                                                     }];
+        @weakify(self);
+        self.loginCommand = [[RACCommand alloc] initWithEnabled:RACObserve(self, loginEnabled) signalBlock:^RACSignal * _Nonnull(id  _Nullable input) {
+            return [RACSignal createSignal:^RACDisposable * _Nullable(id<RACSubscriber>  _Nonnull subscriber) {
+                [subscriber sendNext:@"start"];
+                dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1.0 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                    @strongify(self);
+                    if ([self.password isEqualToString:@"123456789"]) {
+                        [subscriber sendNext:@"success"];
+                        [subscriber sendCompleted];
+                    } else {
+                        [subscriber sendError:nil];
+                    }
+                });
+                return nil;
+            }];
+        }];
     }
     return self;
 }

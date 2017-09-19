@@ -27,7 +27,19 @@
     // bind output signals
     RAC(self.usernameTextField, backgroundColor) = ConvertInputStateToColor(RACObserve(self.viewModel, usernameInputState));
     RAC(self.passwordTextField, backgroundColor) = ConvertInputStateToColor(RACObserve(self.viewModel, passwordInputState));
-    RAC(self.loginButton, enabled) = RACObserve(self.viewModel, loginEnabled);
+    
+    self.loginButton.rac_command = self.viewModel.loginCommand;
+    [self.viewModel.loginCommand.executionSignals subscribeNext:^(RACSignal<id> * executionSignal) {
+        NSLog(@"get signal: %@", executionSignal);
+        [executionSignal subscribeNext:^(NSString *step) {
+            NSLog(@"get step: %@", step);
+        } completed:^{
+            NSLog(@"get completed.");
+        }];
+    }];
+    [self.viewModel.loginCommand.errors subscribeNext:^(NSError * error) {
+        NSLog(@"get error.");
+    }];
 }
 
 @end
