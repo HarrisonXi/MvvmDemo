@@ -22,12 +22,12 @@
     
     self.viewModel = [ViewModel new];
     // bind input signals
-    RAC(self.viewModel, username) = self.usernameTextField.rac_textSignal;
-    RAC(self.viewModel, password) = self.passwordTextField.rac_textSignal;
+    EZR_PATH(self.viewModel, username) = EZR_PATH(self.usernameTextField, text);
+    EZR_PATH(self.viewModel, password) = EZR_PATH(self.passwordTextField, text);
     // bind output signals
-    RAC(self.usernameTextField, backgroundColor) = ConvertInputStateToColor(RACObserve(self.viewModel, usernameInputState));
-    RAC(self.passwordTextField, backgroundColor) = ConvertInputStateToColor(RACObserve(self.viewModel, passwordInputState));
-    RAC(self.loginButton, enabled) = RACObserve(self.viewModel, loginEnabled);
+    EZR_PATH(self.usernameTextField, backgroundColor) = ConvertInputStateToColor(EZR_PATH(self.viewModel, usernameInputState));
+    EZR_PATH(self.passwordTextField, backgroundColor) = ConvertInputStateToColor(EZR_PATH(self.viewModel, passwordInputState));
+    EZR_PATH(self.loginButton, enabled) = EZR_PATH(self.viewModel, loginEnabled);
 }
 
 @end

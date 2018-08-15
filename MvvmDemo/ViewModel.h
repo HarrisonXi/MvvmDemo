@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import <ReactiveObjC/ReactiveObjC.h>
+#import <EasyReact/EasyReact.h>
 
 typedef enum : NSUInteger {
     InputStateEmpty,
@@ -16,11 +16,11 @@ typedef enum : NSUInteger {
     InputStateInvalid
 } InputState;
 
-#define ConvertInputStateToColor(signal) [InputStateToColorConverter convert:signal]
+#define ConvertInputStateToColor(node) [InputStateToColorConverter convert:node]
 
 @interface InputStateToColorConverter : NSObject
 
-+ (RACSignal *)convert:(RACSignal *)signal;
++ (EZRMutableNode *)convert:(EZRNode *)node;
 
 @end
 

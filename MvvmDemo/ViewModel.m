@@ -14,9 +14,9 @@
 
 @implementation InputStateToColorConverter
 
-+ (RACSignal *)convert:(RACSignal *)signal
++ (EZRMutableNode *)convert:(EZRNode *)node
 {
-    return [signal map:^id(NSNumber *inputStateNumber) {
+    return [node map:^id _Nullable(NSNumber * _Nullable inputStateNumber) {
         InputState inputState = [inputStateNumber unsignedIntegerValue];
         switch (inputState) {
             case InputStateValid:
@@ -26,7 +26,7 @@
             default:
                 return WhiteBgColor;
         }
-    }];
+    }].mutablify;
 }
 
 @end
@@ -44,7 +44,7 @@
 - (instancetype)init
 {
     if (self = [super init]) {
-        RAC(self, usernameInputState) = [RACObserve(self, username) map:^id(NSString *username) {
+        EZR_PATH(self, usernameInputState) = [EZR_PATH(self, username) map:^id _Nullable(NSString * _Nullable username) {
             if ([username length] >= 4 && [username length] <= 16) {
                 return @(InputStateValid);
             } else {
@@ -54,9 +54,9 @@
                     return @(InputStateInvalid);
                 }
             }
-        }];
+        }].mutablify;
         
-        RAC(self, passwordInputState) = [RACObserve(self, password) map:^id(NSString *password) {
+        EZR_PATH(self, passwordInputState) = [EZR_PATH(self, password) map:^id _Nullable(NSString * _Nullable password) {
             if ([password length] >= 8 && [password length] <= 16) {
                 return @(InputStateValid);
             } else {
@@ -66,19 +66,19 @@
                     return @(InputStateInvalid);
                 }
             }
-        }];
+        }].mutablify;
         
-        RAC(self, loginEnabled) = [RACSignal combineLatest:@[RACObserve(self, usernameInputState),
-                                                             RACObserve(self, passwordInputState)]
-                                                    reduce:^id(NSNumber *usernameInputStateValue,
-                                                               NSNumber *passwordInputStateValue){
-                                                        if ([usernameInputStateValue unsignedIntegerValue] == InputStateValid &&
-                                                            [passwordInputStateValue unsignedIntegerValue] == InputStateValid) {
-                                                            return @(YES);
-                                                        } else {
-                                                            return @(NO);
-                                                        }
-                                                    }];
+        EZR_PATH(self, loginEnabled) = [EZRCombine(EZR_PATH(self, usernameInputState),
+                                                   EZR_PATH(self, passwordInputState))
+                                        mapEach:^id _Nonnull(NSNumber * _Nonnull usernameInputStateValue,
+                                                             NSNumber * _Nonnull passwordInputStateValue) {
+                                            if ([usernameInputStateValue unsignedIntegerValue] == InputStateValid &&
+                                                [passwordInputStateValue unsignedIntegerValue] == InputStateValid) {
+                                                return @(YES);
+                                            } else {
+                                                return @(NO);
+                                            }
+                                        }].mutablify;
     }
     return self;
 }
