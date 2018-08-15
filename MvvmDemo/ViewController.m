@@ -21,13 +21,20 @@
     [super viewDidLoad];
     
     self.viewModel = [ViewModel new];
-    // bind input signals
-    EZR_PATH(self.viewModel, username) = EZR_PATH(self.usernameTextField, text);
-    EZR_PATH(self.viewModel, password) = EZR_PATH(self.passwordTextField, text);
     // bind output signals
     EZR_PATH(self.usernameTextField, backgroundColor) = ConvertInputStateToColor(EZR_PATH(self.viewModel, usernameInputState));
     EZR_PATH(self.passwordTextField, backgroundColor) = ConvertInputStateToColor(EZR_PATH(self.viewModel, passwordInputState));
     EZR_PATH(self.loginButton, enabled) = EZR_PATH(self.viewModel, loginEnabled);
+}
+
+- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(nonnull NSString *)string
+{
+    if (textField == self.usernameTextField) {
+        self.viewModel.username = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    } else {
+        self.viewModel.password = [textField.text stringByReplacingCharactersInRange:range withString:string];
+    }
+    return YES;
 }
 
 @end
