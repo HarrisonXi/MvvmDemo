@@ -76,6 +76,7 @@
 		77E3F351E7E32B308AAD9DA1615E389C /* EZRCancelableBagProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = DFC1523CEF309DF3EF8A89B0B6A4B767 /* EZRCancelableBagProtocol.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		77E6F94A6CF35672EDE7FC05921DEFAE /* EZSOrderedSet.m in Sources */ = {isa = PBXBuildFile; fileRef = F35C43C5CED4FC571631594FC6B70DFD /* EZSOrderedSet.m */; };
 		7BA0F8728A634CED9444AEBF44D9B51B /* EZRNode+Graph.m in Sources */ = {isa = PBXBuildFile; fileRef = 6086815E1C75ADA5CF30BB49D18B3B26 /* EZRNode+Graph.m */; };
+		7CDB4A79AC05AFE0203632BC5BB596B2 /* Pods-MvvmDemoTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = F0C933A6E7D1E80AC3320D335EA1455D /* Pods-MvvmDemoTests-dummy.m */; };
 		806824FC3B2EA65BDFB1F1E14D004ACF /* EZRDeliveredListen.m in Sources */ = {isa = PBXBuildFile; fileRef = 16ACCB388C371E598B1E63477489418D /* EZRDeliveredListen.m */; };
 		83B04D7407A6F0E607C199E406087AC4 /* EZRBlockCancelable.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE998FF77AC17B9D8234061A8B2E379 /* EZRBlockCancelable.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		8873B0C0D0DEB2615E2928B779BCD5AB /* EZSEnumerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE1218999080F812941DDCC80BFB005 /* EZSEnumerator.m */; };
@@ -90,7 +91,7 @@
 		9539A0B7E3189CC4DB1108CA597334AD /* EZRBlockListen.h in Headers */ = {isa = PBXBuildFile; fileRef = F8776BB64751F754E5CE90E551BBDCBE /* EZRBlockListen.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		96D4FCE13E62A1042EF5E3386A9B1CC9 /* EZRListenContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 000D94CA2A8F1DDED6623FDB546D0ACB /* EZRListenContext.m */; };
 		984D27BDB43AD995012C4E736ED30DD8 /* NSObject+EZSDeallocBell.h in Headers */ = {isa = PBXBuildFile; fileRef = BEA4F52276D2BDD894727C357CEEF216 /* NSObject+EZSDeallocBell.h */; settings = {ATTRIBUTES = (Project, ); }; };
-		99167F0ECC99AB50764FE56043C26488 /* Pods-MvvmDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F25397B474A1DE47C38F8F5011DE538 /* Pods-MvvmDemo-dummy.m */; };
+		99167F0ECC99AB50764FE56043C26488 /* Pods-MvvmDemo-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = B5B1EE5171F606490D7F38591ADDE2E1 /* Pods-MvvmDemo-dummy.m */; };
 		99C1E9D3881A896A7715A53ADE33D6F0 /* NSArray+EZSTransfer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FEB466FEF59B7727B33CCD189C54183 /* NSArray+EZSTransfer.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9A0B4DC1418CC76529032B73C3BA32E0 /* EZSOrderedSet.h in Headers */ = {isa = PBXBuildFile; fileRef = F55848A4706E29ABBBC2DA12EF3373C5 /* EZSOrderedSet.h */; settings = {ATTRIBUTES = (Project, ); }; };
 		9AB8B0E1AEBCE05B11D054ED492823D9 /* EZRNode+Mutable.h in Headers */ = {isa = PBXBuildFile; fileRef = 3C5A20C315E48764D6313A20F9322785 /* EZRNode+Mutable.h */; settings = {ATTRIBUTES = (Project, ); }; };
@@ -179,6 +180,13 @@
 			remoteGlobalIDString = 11DCC7BA0C328C3160B8B7D1C972FA9A;
 			remoteInfo = EasySequence;
 		};
+		395971543A7B6A02BDE9CBF5981EB8AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E93F1BB5B46391924F0F0A373E9D5F4;
+			remoteInfo = EasyReact;
+		};
 		4BE21E621A7A6B49A4DEB39568BA04E2 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
@@ -200,12 +208,26 @@
 			remoteGlobalIDString = A90BF676E6322799429E95CD28D919FE;
 			remoteInfo = EasyTuple;
 		};
+		79C9125502861A3E53557C60726BA99D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A90BF676E6322799429E95CD28D919FE;
+			remoteInfo = EasyTuple;
+		};
 		DFA4AEB9FFE847D945DF373357BD77E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 429BE0C2BB088867312136A905D989F5;
 			remoteInfo = EasyFoundation;
+		};
+		E5EC083179A76E899F2BC483E5498A83 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 11DCC7BA0C328C3160B8B7D1C972FA9A;
+			remoteInfo = EasySequence;
 		};
 		F01DF858BE8CDD20D74C5EA9BDAD0F88 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -214,21 +236,31 @@
 			remoteGlobalIDString = 11DCC7BA0C328C3160B8B7D1C972FA9A;
 			remoteInfo = EasySequence;
 		};
+		F9F591F3BDAF5A2DA7578DF1F13CB8C8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 429BE0C2BB088867312136A905D989F5;
+			remoteInfo = EasyFoundation;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		000D94CA2A8F1DDED6623FDB546D0ACB /* EZRListenContext.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRListenContext.m; path = EasyReact/Classes/Core/EZRListenContext.m; sourceTree = "<group>"; };
 		011DFAD448CB1E1327AE914163E86937 /* EZTupleBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZTupleBase.m; path = EasyTuple/EZTupleBase.m; sourceTree = "<group>"; };
 		03CB696223480D1947151D1E0A03D73A /* EZRSwitchMapTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRSwitchMapTransform.m; path = EasyReact/Classes/Core/NodeTransforms/EZRSwitchMapTransform.m; sourceTree = "<group>"; };
+		03E9CE4C6100DFBB83FCE666028D0F49 /* Pods-MvvmDemoTests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MvvmDemoTests-resources.sh"; sourceTree = "<group>"; };
 		0688B3CDF745EA7A84F8D71985CB5D88 /* EZSequence+ProjectPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZSequence+ProjectPrivate.h"; path = "EasySequence/Classes/Private/EZSequence+ProjectPrivate.h"; sourceTree = "<group>"; };
-		06F385596465228066A8F1C0AB5C7664 /* libEasyTuple.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasyTuple.a; path = libEasyTuple.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		082662962990D671A0205AD9289F92EA /* Pods-MvvmDemoTests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MvvmDemoTests-frameworks.sh"; sourceTree = "<group>"; };
 		08B1AA4736310D490D108701771D270B /* EZRMutableNode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRMutableNode.h; path = EasyReact/Classes/Core/EZRMutableNode.h; sourceTree = "<group>"; };
+		0904708F39350A5AB64B9E474E104467 /* Pods-MvvmDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MvvmDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
+		097F4E482AFB3F3BD6011D80827D8E4D /* Pods-MvvmDemoTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MvvmDemoTests-acknowledgements.plist"; sourceTree = "<group>"; };
 		09836A3AC5B67DD5701CF47F17ABB3CC /* EZRMapTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRMapTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRMapTransform.h; sourceTree = "<group>"; };
 		0BF027C44083C5C3088671998A103F1A /* EZRNode+Graph.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZRNode+Graph.h"; path = "EasyReact/Classes/Core/EZRNode+Graph.h"; sourceTree = "<group>"; };
 		0E7CF1A648AC9A28EDCA4013C55A8A94 /* EZRPerformSelectorListen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRPerformSelectorListen.m; path = EasyReact/Classes/Core/ListenEdges/EZRPerformSelectorListen.m; sourceTree = "<group>"; };
 		15A563C320BBEB07B789F854F6D857AC /* EZRNode+MapEach.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EZRNode+MapEach.m"; path = "EasyReact/Classes/Core/Private/EZRNode+MapEach.m"; sourceTree = "<group>"; };
 		16ACCB388C371E598B1E63477489418D /* EZRDeliveredListen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRDeliveredListen.m; path = EasyReact/Classes/Core/ListenEdges/EZRDeliveredListen.m; sourceTree = "<group>"; };
-		188D41CC88C55B947096FA18ADD13BEB /* libEasyFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasyFoundation.a; path = libEasyFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A4947B02ABCBCAD802E8FD41AC68EDA /* libPods-MvvmDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MvvmDemoTests.a"; path = "libPods-MvvmDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ADD0DA79480B69B7867538E0C4D25A4 /* NSObject+EZSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+EZSequence.m"; path = "EasySequence/Classes/Transfers/NSObject+EZSequence.m"; sourceTree = "<group>"; };
 		1C84C1A8D157BAEF099697474E24C9A5 /* EasyFoundation.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyFoundation.xcconfig; sourceTree = "<group>"; };
 		1DB660B09A5CDAE29B2EE1F027C9812E /* EZRListen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRListen.m; path = EasyReact/Classes/Core/EZRListen.m; sourceTree = "<group>"; };
@@ -241,13 +273,10 @@
 		23C6E8CA84660C1FEDC87D0168B793A5 /* EasySequence-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasySequence-prefix.pch"; sourceTree = "<group>"; };
 		2458F7461113D21DA414BF294A314EC8 /* EZRCaseTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRCaseTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRCaseTransform.h; sourceTree = "<group>"; };
 		26DC1A71714F815F388943AD37C3C464 /* EZRNode+Listen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EZRNode+Listen.m"; path = "EasyReact/Classes/Core/EZRNode+Listen.m"; sourceTree = "<group>"; };
-		281F0178C2294D4E0750E9F8AB511B5F /* Pods-MvvmDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MvvmDemo-frameworks.sh"; sourceTree = "<group>"; };
 		2896B1485B2D564C4D95A50109312F42 /* EZSWeakArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZSWeakArray.h; path = EasySequence/Classes/Sequences/EZSWeakArray.h; sourceTree = "<group>"; };
-		2904B2BC4F4D37C97F5A9A8B019D603F /* Pods-MvvmDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MvvmDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		2A2ED96FD885020378F88855658FE407 /* EZRCaseTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRCaseTransform.m; path = EasyReact/Classes/Core/NodeTransforms/EZRCaseTransform.m; sourceTree = "<group>"; };
 		2A7B3231D4F43077E6BC3C256D1749CB /* EZRZipTransformGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRZipTransformGroup.h; path = EasyReact/Classes/Core/NodeTransforms/EZRZipTransformGroup.h; sourceTree = "<group>"; };
 		2C063A9B1A57370A33E526C37B9F171C /* EZSTransfer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZSTransfer.h; path = EasySequence/Classes/Protocols/EZSTransfer.h; sourceTree = "<group>"; };
-		2CE858485F4E338D29F8FBE1E0EE1777 /* Pods-MvvmDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MvvmDemo.release.xcconfig"; sourceTree = "<group>"; };
 		2F57A77B7B5425FFA5D3A181D233B9EF /* NSObject+EZR_Extension.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+EZR_Extension.h"; path = "EasyReact/Classes/Categories/NSObject+EZR_Extension.h"; sourceTree = "<group>"; };
 		336B86B13683673C7625B9F05E2B412E /* EasySequence-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasySequence-dummy.m"; sourceTree = "<group>"; };
 		33C53C946CFC1845AB9946E2AA250206 /* EZSQueue.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZSQueue.m; path = EasySequence/Classes/Sequences/EZSQueue.m; sourceTree = "<group>"; };
@@ -255,8 +284,8 @@
 		35CD4E69C1E60FA002E92C741FAC101B /* EZRMapTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRMapTransform.m; path = EasyReact/Classes/Core/NodeTransforms/EZRMapTransform.m; sourceTree = "<group>"; };
 		3799363DBF7B72AFD030788113C7EDDC /* EZRNode+Mutable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EZRNode+Mutable.m"; path = "EasyReact/Classes/Core/EZRNode+Mutable.m"; sourceTree = "<group>"; };
 		39140EDE01E865A4B3AB6DA854907CD6 /* EZRNode+Operation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZRNode+Operation.h"; path = "EasyReact/Classes/Core/EZRNode+Operation.h"; sourceTree = "<group>"; };
+		3B99D4BBE3A9C32BBAAE1D7183FD4156 /* Pods-MvvmDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MvvmDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
 		3C5A20C315E48764D6313A20F9322785 /* EZRNode+Mutable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZRNode+Mutable.h"; path = "EasyReact/Classes/Core/EZRNode+Mutable.h"; sourceTree = "<group>"; };
-		3CC68A0078E8E10F671789170A975B60 /* libEasyReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasyReact.a; path = libEasyReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		3FEF43E624DD83F2D75A067222D9A867 /* EZNamedTupleImp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZNamedTupleImp.h; path = EasyTuple/EZNamedTupleImp.h; sourceTree = "<group>"; };
 		401F0ACF4AFC9AD8D34EF1D0BFCD5F0E /* EZTupleSubClasses.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZTupleSubClasses.h; path = EasyTuple/EZTupleSubClasses.h; sourceTree = "<group>"; };
 		413BD334E315091607E34656F237BC61 /* EZRTakeTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRTakeTransform.m; path = EasyReact/Classes/Core/NodeTransforms/EZRTakeTransform.m; sourceTree = "<group>"; };
@@ -273,31 +302,34 @@
 		5195F30460AA81D168FF3287F29789A9 /* EZRNextReceiver.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRNextReceiver.h; path = EasyReact/Classes/Core/EZRNextReceiver.h; sourceTree = "<group>"; };
 		529957E5FDC0C13061AF5FF8B61B2B9C /* EZRPerformSelectorListen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRPerformSelectorListen.h; path = EasyReact/Classes/Core/ListenEdges/EZRPerformSelectorListen.h; sourceTree = "<group>"; };
 		54FB6C106AF64BBCB866704227FCE500 /* NSOrderedSet+EZSTransfer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSOrderedSet+EZSTransfer.h"; path = "EasySequence/Classes/Transfers/NSOrderedSet+EZSTransfer.h"; sourceTree = "<group>"; };
+		59660CC04CD5B116AF53A10528A0FA95 /* libPods-MvvmDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MvvmDemo.a"; path = "libPods-MvvmDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5A0761325CE5A8C4D6F4F0495CCB91F9 /* Pods-MvvmDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MvvmDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5A126F66C6FFA180E5756EB719A8170B /* EZRThrottleTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRThrottleTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRThrottleTransform.h; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5C91B38917C8089EA7D5189F1EBA2AE2 /* EZRListenContext+ProjectPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZRListenContext+ProjectPrivate.h"; path = "EasyReact/Classes/Core/Private/EZRListenContext+ProjectPrivate.h"; sourceTree = "<group>"; };
 		5E436D69A0DCB73AED4F72F8B74817C0 /* EZRScanTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRScanTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRScanTransform.h; sourceTree = "<group>"; };
+		5E560BCBE856B05F8EE05029B66CD575 /* Pods-MvvmDemoTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MvvmDemoTests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5EFC7B99C268CE36450210CDA15AFAE1 /* EZRFilteredTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRFilteredTransform.m; path = EasyReact/Classes/Core/NodeTransforms/EZRFilteredTransform.m; sourceTree = "<group>"; };
 		6042318D19AEAFC4609E2FBAF73695FC /* EZRListenEdge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRListenEdge.h; path = EasyReact/Classes/Core/EZRListenEdge.h; sourceTree = "<group>"; };
 		6086815E1C75ADA5CF30BB49D18B3B26 /* EZRNode+Graph.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EZRNode+Graph.m"; path = "EasyReact/Classes/Core/EZRNode+Graph.m"; sourceTree = "<group>"; };
 		6551D1E64A241E79C34E9049F5D14D83 /* EZRSwitchMapTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRSwitchMapTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRSwitchMapTransform.h; sourceTree = "<group>"; };
 		66837B67D7CBEFF14E3C0ED382377CAD /* NSObject+EZR_Extension.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+EZR_Extension.m"; path = "EasyReact/Classes/Categories/NSObject+EZR_Extension.m"; sourceTree = "<group>"; };
 		6745355C15E40D4902E1A91700E21C01 /* EZTupleBase+EZFTransfer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZTupleBase+EZFTransfer.h"; path = "EasyFoundation/Classes/EZTupleBase+EZFTransfer.h"; sourceTree = "<group>"; };
+		6A1DAA79557758C0978A0D9C0A270A66 /* Pods-MvvmDemo-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MvvmDemo-frameworks.sh"; sourceTree = "<group>"; };
 		6BB248618A792FB84A2052896E5B7F1C /* EZRNode+ProjectPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZRNode+ProjectPrivate.h"; path = "EasyReact/Classes/Core/Private/EZRNode+ProjectPrivate.h"; sourceTree = "<group>"; };
 		6D4C1401BF16071B06F9069332DE00E4 /* EZREmpty.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZREmpty.m; path = EasyReact/Classes/Core/EZREmpty.m; sourceTree = "<group>"; };
 		6FFC3199E5FADC6BCDFBD29D970DCF94 /* EasyReact.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EasyReact.h; path = EasyReact/Classes/EasyReact.h; sourceTree = "<group>"; };
 		7217F6923D889DEC8161D361C054C998 /* NSSet+EZSTransfer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSSet+EZSTransfer.h"; path = "EasySequence/Classes/Transfers/NSSet+EZSTransfer.h"; sourceTree = "<group>"; };
-		73BE23373320FD74FBFBB38BC2EFFF5E /* Pods-MvvmDemo-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MvvmDemo-acknowledgements.markdown"; sourceTree = "<group>"; };
 		74122DCEFC137E735560BC87F61BF37F /* EZSBlockDefines.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZSBlockDefines.h; path = EasySequence/Classes/Defines/EZSBlockDefines.h; sourceTree = "<group>"; };
 		7418D050EC50F52D8ADBBCC72DB774FE /* EZRTransformEdge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRTransformEdge.h; path = EasyReact/Classes/Core/EZRTransformEdge.h; sourceTree = "<group>"; };
 		7561571077B62B7C1472DC150A988D3C /* EZRCombineTransformGroup.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRCombineTransformGroup.h; path = EasyReact/Classes/Core/NodeTransforms/EZRCombineTransformGroup.h; sourceTree = "<group>"; };
+		76AC8B043163E9E13D0385874282A3DF /* libEasySequence.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasySequence.a; path = libEasySequence.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		77F22C749DB6BC9FB7AB3FE78F05B220 /* EZSMetaMacrosPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZSMetaMacrosPrivate.h; path = EasySequence/Classes/Private/EZSMetaMacrosPrivate.h; sourceTree = "<group>"; };
 		78BAA6DDF45B88E252DC9DE629A67F06 /* EasyFoundation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EasyFoundation.h; path = EasyFoundation/Classes/EasyFoundation.h; sourceTree = "<group>"; };
 		7E4AC9488F8871651FE954704092145C /* NSObject+EZR_Listen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+EZR_Listen.m"; path = "EasyReact/Classes/Core/NSObject+EZR_Listen.m"; sourceTree = "<group>"; };
 		7F7F635F47B570D0DF2FE07A3D4BBFA8 /* EZSWeakArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZSWeakArray.m; path = EasySequence/Classes/Sequences/EZSWeakArray.m; sourceTree = "<group>"; };
 		7FD7234C8C6C52854F94C7B2E735714A /* EasyTuple.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EasyTuple.h; path = EasyTuple/EasyTuple.h; sourceTree = "<group>"; };
 		80815EC255CF8438E432F830BFFBF3EA /* EZRMetaMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRMetaMacros.h; path = EasyReact/Classes/Core/EZRMetaMacros.h; sourceTree = "<group>"; };
-		80D709325248C38CA0D59AFF03BBF236 /* libEasySequence.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasySequence.a; path = libEasySequence.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		8403DE4EBA632B57871DA716AF688339 /* EZSArray.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZSArray.m; path = EasySequence/Classes/Sequences/EZSArray.m; sourceTree = "<group>"; };
 		842A7982C9B278949105F7BB56F856AD /* EZRNode+Value.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZRNode+Value.h"; path = "EasyReact/Classes/Core/EZRNode+Value.h"; sourceTree = "<group>"; };
 		87179A1FC7606B9D3CAA7FB16F6EF42F /* EZREdge.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZREdge.h; path = EasyReact/Classes/Core/EZREdge.h; sourceTree = "<group>"; };
@@ -314,28 +346,30 @@
 		959CA37A819F156E68F6629D9057CB74 /* EZRSenderList.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRSenderList.h; path = EasyReact/Classes/Utils/EZRSenderList.h; sourceTree = "<group>"; };
 		970B48EB819D66F546E2BE612C58D590 /* EZRMetaMacrosPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRMetaMacrosPrivate.h; path = EasyReact/Classes/Core/Private/EZRMetaMacrosPrivate.h; sourceTree = "<group>"; };
 		9779055CEB56255C0E0792FC67A0DB93 /* EZSEnumerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZSEnumerator.h; path = EasySequence/Classes/Enumerators/EZSEnumerator.h; sourceTree = "<group>"; };
+		9BA236A6907D098C556FA93FA676412A /* Pods-MvvmDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MvvmDemo.release.xcconfig"; sourceTree = "<group>"; };
+		9BC4792F6C945F223BDED07A0454DF9A /* Pods-MvvmDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MvvmDemoTests.release.xcconfig"; sourceTree = "<group>"; };
 		9CCBE3793061AED12C37AD2B8B4F7BD8 /* EZRNode+Operation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EZRNode+Operation.m"; path = "EasyReact/Classes/Core/EZRNode+Operation.m"; sourceTree = "<group>"; };
 		9F0BAC503CA6AD789667B5794D1645CB /* EZSequence+Operations.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EZSequence+Operations.m"; path = "EasySequence/Classes/Operations/EZSequence+Operations.m"; sourceTree = "<group>"; };
 		9F18439A12B2EEF857C3FF895538E7B8 /* EasyReact-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyReact-dummy.m"; sourceTree = "<group>"; };
-		9F25397B474A1DE47C38F8F5011DE538 /* Pods-MvvmDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MvvmDemo-dummy.m"; sourceTree = "<group>"; };
 		9F5E0D848FAEBEAF14293B29892EFA62 /* EZRBlockCancelable.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRBlockCancelable.m; path = EasyReact/Classes/Core/EZRBlockCancelable.m; sourceTree = "<group>"; };
-		A206259BDE63F8CF0691E4495CCF7A2D /* Pods-MvvmDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MvvmDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		A3C717360F91F40D430F88B0164AD7CB /* EZRDistinctTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRDistinctTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRDistinctTransform.h; sourceTree = "<group>"; };
+		ABBB8480D0A92D23520D1BB34ED346A3 /* Pods-MvvmDemo-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MvvmDemo-acknowledgements.plist"; sourceTree = "<group>"; };
 		ABE998FF77AC17B9D8234061A8B2E379 /* EZRBlockCancelable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRBlockCancelable.h; path = EasyReact/Classes/Core/EZRBlockCancelable.h; sourceTree = "<group>"; };
 		AC41DEAB414DF9E496935EE7A6A9F032 /* EZREmpty.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZREmpty.h; path = EasyReact/Classes/Core/EZREmpty.h; sourceTree = "<group>"; };
 		AE843152061F26D0A9D92DD9C747E903 /* EZRPathTrampoline.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRPathTrampoline.m; path = EasyReact/Classes/Utils/EZRPathTrampoline.m; sourceTree = "<group>"; };
 		B1198BABEE99CC0F59CCA8592682934F /* EZRDeliveredListen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRDeliveredListen.h; path = EasyReact/Classes/Core/ListenEdges/EZRDeliveredListen.h; sourceTree = "<group>"; };
 		B1B1828651E1EE20EE2D60EE19FCA904 /* EZRDistinctTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRDistinctTransform.m; path = EasyReact/Classes/Core/NodeTransforms/EZRDistinctTransform.m; sourceTree = "<group>"; };
 		B25E706628B4AED5DF1A783B7F73026A /* NSArray+EZSTransfer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+EZSTransfer.m"; path = "EasySequence/Classes/Transfers/NSArray+EZSTransfer.m"; sourceTree = "<group>"; };
+		B307534C9186BCD3058E22A22F3F321B /* libEasyFoundation.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasyFoundation.a; path = libEasyFoundation.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		B334DC1E1E13C8C66204B3D02CA70DD3 /* EZRListenContext.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRListenContext.h; path = EasyReact/Classes/Core/EZRListenContext.h; sourceTree = "<group>"; };
 		B35C6EFF184E628197EC5F819D65891F /* EZRTypeDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRTypeDefine.h; path = EasyReact/Classes/Core/EZRTypeDefine.h; sourceTree = "<group>"; };
 		B50FC5E793059CCAE7D9E19E1B842D65 /* EZSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZSequence.h; path = EasySequence/Classes/EZSequence.h; sourceTree = "<group>"; };
+		B5B1EE5171F606490D7F38591ADDE2E1 /* Pods-MvvmDemo-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MvvmDemo-dummy.m"; sourceTree = "<group>"; };
 		B76463A3DB7A6BA3511E11943F10F1BD /* EZRBlockListen.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRBlockListen.m; path = EasyReact/Classes/Core/ListenEdges/EZRBlockListen.m; sourceTree = "<group>"; };
 		B8D68F3364CBDD1F93FF7C7909E493B9 /* EZRNode+Value.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "EZRNode+Value.m"; path = "EasyReact/Classes/Core/EZRNode+Value.m"; sourceTree = "<group>"; };
 		BB57CEDBB9733FC0513138D6481CA7DA /* EZSArray.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZSArray.h; path = EasySequence/Classes/Sequences/EZSArray.h; sourceTree = "<group>"; };
 		BE6BDB5AA8D0867B5CC3C8FA7CFAB5F8 /* EZRDeliverTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRDeliverTransform.m; path = EasyReact/Classes/Core/NodeTransforms/EZRDeliverTransform.m; sourceTree = "<group>"; };
 		BEA4F52276D2BDD894727C357CEEF216 /* NSObject+EZSDeallocBell.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+EZSDeallocBell.h"; path = "EasySequence/Classes/Utils/NSObject+EZSDeallocBell.h"; sourceTree = "<group>"; };
-		C04B9937FDFD0513D2551041513DDAD5 /* Pods-MvvmDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MvvmDemo-resources.sh"; sourceTree = "<group>"; };
 		C0A54F70AE3BF047C68EBD086099EA7E /* NSSet+EZSTransfer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSSet+EZSTransfer.m"; path = "EasySequence/Classes/Transfers/NSSet+EZSTransfer.m"; sourceTree = "<group>"; };
 		C14046245D16D2439807C987EFCCF021 /* EZSWeakReference.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZSWeakReference.m; path = EasySequence/Classes/Utils/EZSWeakReference.m; sourceTree = "<group>"; };
 		C22B3CBAF111FB953109EFC18BB36258 /* EZRZipTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRZipTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRZipTransform.h; sourceTree = "<group>"; };
@@ -346,6 +380,7 @@
 		C6AF072A2D70DD58B23832BE1ED9856D /* EZSequence.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZSequence.m; path = EasySequence/Classes/EZSequence.m; sourceTree = "<group>"; };
 		C7DD61751E4D1094855FCE2B90BE4E46 /* EasyTuple-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyTuple-prefix.pch"; sourceTree = "<group>"; };
 		C91797F23907091B84FA7FC10BC9A947 /* EasyTuple.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyTuple.xcconfig; sourceTree = "<group>"; };
+		CA1DFED5D2498DB7A2FE4CDDA7795ADF /* libEasyTuple.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasyTuple.a; path = libEasyTuple.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE572288D8454D6658F9E08DD58CE31 /* EZRCombineTransformGroup.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRCombineTransformGroup.m; path = EasyReact/Classes/Core/NodeTransforms/EZRCombineTransformGroup.m; sourceTree = "<group>"; };
 		CD02518173FDAE8E42BE8BD6B0D1FF84 /* EZRListen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRListen.h; path = EasyReact/Classes/Core/EZRListen.h; sourceTree = "<group>"; };
 		CD9199187ED766892EAA45C6B312673F /* EZRDeliverTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRDeliverTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRDeliverTransform.h; sourceTree = "<group>"; };
@@ -354,6 +389,7 @@
 		D26C127ECDF0DB434F4DC4BCFC5342DB /* EZRMutableNode+ProjectPrivate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZRMutableNode+ProjectPrivate.h"; path = "EasyReact/Classes/Core/Private/EZRMutableNode+ProjectPrivate.h"; sourceTree = "<group>"; };
 		D559B9C96CF5493D4BF1391D63D49F42 /* EasyTuple-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyTuple-dummy.m"; sourceTree = "<group>"; };
 		D793806CAD44E455D318F6150B862D47 /* EZRDelayTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRDelayTransform.m; path = EasyReact/Classes/Core/NodeTransforms/EZRDelayTransform.m; sourceTree = "<group>"; };
+		DAC577EB0F150B246AE43B2D0DABDF2D /* libEasyReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libEasyReact.a; path = libEasyReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		DACE63C8B93673DFE6AD076D6AA60539 /* EZRCancelable.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRCancelable.h; path = EasyReact/Classes/Core/EZRCancelable.h; sourceTree = "<group>"; };
 		DAF405FB78B9F3B7F55025AA5E1DF8D4 /* EZRSkipTransform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRSkipTransform.h; path = EasyReact/Classes/Core/NodeTransforms/EZRSkipTransform.h; sourceTree = "<group>"; };
 		DD19125D552662699500605736C5C563 /* EZSUsefulBlocks.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZSUsefulBlocks.m; path = EasySequence/Classes/UsefulBlocks/EZSUsefulBlocks.m; sourceTree = "<group>"; };
@@ -370,6 +406,8 @@
 		EB22F7F4EEDF9298FDA6EA9CB89AE9FF /* EasyReact-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyReact-prefix.pch"; sourceTree = "<group>"; };
 		EB5B8CEE30AE7AFFB9D8C5F04D919A91 /* EZRThrottleTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRThrottleTransform.m; path = EasyReact/Classes/Core/NodeTransforms/EZRThrottleTransform.m; sourceTree = "<group>"; };
 		EC0C7C09A4668E1C5291D226D0289207 /* EZRNode+MapEach.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "EZRNode+MapEach.h"; path = "EasyReact/Classes/Core/Private/EZRNode+MapEach.h"; sourceTree = "<group>"; };
+		ED641432432FB610DF035263A6D931E4 /* Pods-MvvmDemo-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MvvmDemo-resources.sh"; sourceTree = "<group>"; };
+		F0C933A6E7D1E80AC3320D335EA1455D /* Pods-MvvmDemoTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MvvmDemoTests-dummy.m"; sourceTree = "<group>"; };
 		F1AB940C14357A4726A955CC22A52ED3 /* EZRZipTransform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZRZipTransform.m; path = EasyReact/Classes/Core/NodeTransforms/EZRZipTransform.m; sourceTree = "<group>"; };
 		F35C43C5CED4FC571631594FC6B70DFD /* EZSOrderedSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZSOrderedSet.m; path = EasySequence/Classes/Sequences/EZSOrderedSet.m; sourceTree = "<group>"; };
 		F55848A4706E29ABBBC2DA12EF3373C5 /* EZSOrderedSet.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZSOrderedSet.h; path = EasySequence/Classes/Sequences/EZSOrderedSet.h; sourceTree = "<group>"; };
@@ -377,7 +415,6 @@
 		F8776BB64751F754E5CE90E551BBDCBE /* EZRBlockListen.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = EZRBlockListen.h; path = EasyReact/Classes/Core/ListenEdges/EZRBlockListen.h; sourceTree = "<group>"; };
 		FA648BC8C4B417C11F05EB6EFAA80E69 /* NSObject+EZSequence.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+EZSequence.h"; path = "EasySequence/Classes/Transfers/NSObject+EZSequence.h"; sourceTree = "<group>"; };
 		FBC05DA79C701F9694137A1E57CAF480 /* EZSWeakOrderedSet.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = EZSWeakOrderedSet.m; path = EasySequence/Classes/Sequences/EZSWeakOrderedSet.m; sourceTree = "<group>"; };
-		FF867733DBF43D720ACC2F10C2C6F775 /* libPods-MvvmDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-MvvmDemo.a"; path = "libPods-MvvmDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -393,6 +430,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3C044C32AA5FF2179FE5306E9BF546A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		849F5AA2E757200965F2255FE48D993B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -440,6 +484,21 @@
 				48D2610EDCC115A2F6461737F9BEB45A /* EasyTuple */,
 			);
 			name = Pods;
+			sourceTree = "<group>";
+		};
+		3081BF6E655C6CC2DC6C682262810372 /* Pods-MvvmDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				5E560BCBE856B05F8EE05029B66CD575 /* Pods-MvvmDemoTests-acknowledgements.markdown */,
+				097F4E482AFB3F3BD6011D80827D8E4D /* Pods-MvvmDemoTests-acknowledgements.plist */,
+				F0C933A6E7D1E80AC3320D335EA1455D /* Pods-MvvmDemoTests-dummy.m */,
+				082662962990D671A0205AD9289F92EA /* Pods-MvvmDemoTests-frameworks.sh */,
+				03E9CE4C6100DFBB83FCE666028D0F49 /* Pods-MvvmDemoTests-resources.sh */,
+				3B99D4BBE3A9C32BBAAE1D7183FD4156 /* Pods-MvvmDemoTests.debug.xcconfig */,
+				9BC4792F6C945F223BDED07A0454DF9A /* Pods-MvvmDemoTests.release.xcconfig */,
+			);
+			name = "Pods-MvvmDemoTests";
+			path = "Target Support Files/Pods-MvvmDemoTests";
 			sourceTree = "<group>";
 		};
 		39D3F097FEC262466DB494156CF7184E /* EasyReact */ = {
@@ -576,21 +635,6 @@
 			path = "../Target Support Files/EasyTuple";
 			sourceTree = "<group>";
 		};
-		70E69E73F25EBFAC6FE357FC3B73F4CC /* Pods-MvvmDemo */ = {
-			isa = PBXGroup;
-			children = (
-				73BE23373320FD74FBFBB38BC2EFFF5E /* Pods-MvvmDemo-acknowledgements.markdown */,
-				2904B2BC4F4D37C97F5A9A8B019D603F /* Pods-MvvmDemo-acknowledgements.plist */,
-				9F25397B474A1DE47C38F8F5011DE538 /* Pods-MvvmDemo-dummy.m */,
-				281F0178C2294D4E0750E9F8AB511B5F /* Pods-MvvmDemo-frameworks.sh */,
-				C04B9937FDFD0513D2551041513DDAD5 /* Pods-MvvmDemo-resources.sh */,
-				A206259BDE63F8CF0691E4495CCF7A2D /* Pods-MvvmDemo.debug.xcconfig */,
-				2CE858485F4E338D29F8FBE1E0EE1777 /* Pods-MvvmDemo.release.xcconfig */,
-			);
-			name = "Pods-MvvmDemo";
-			path = "Target Support Files/Pods-MvvmDemo";
-			sourceTree = "<group>";
-		};
 		7B5F9303D1F1E90FF10716E412857FC7 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -608,8 +652,8 @@
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
 				2FE62922751FD37EE449BB575EF5A838 /* Pods */,
-				EECDD0047D4C0DBB60E131E39350BD56 /* Products */,
-				ABA1E3484EE0D5A3A12497F57DE3B15F /* Targets Support Files */,
+				EBA286EB274A57160BBDA300E5AA0060 /* Products */,
+				EEA68C449599246437B2366147606DF7 /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
@@ -657,12 +701,19 @@
 			path = EasySequence;
 			sourceTree = "<group>";
 		};
-		ABA1E3484EE0D5A3A12497F57DE3B15F /* Targets Support Files */ = {
+		8F829A9DC09FC2DC1B3AB6153712629C /* Pods-MvvmDemo */ = {
 			isa = PBXGroup;
 			children = (
-				70E69E73F25EBFAC6FE357FC3B73F4CC /* Pods-MvvmDemo */,
+				0904708F39350A5AB64B9E474E104467 /* Pods-MvvmDemo-acknowledgements.markdown */,
+				ABBB8480D0A92D23520D1BB34ED346A3 /* Pods-MvvmDemo-acknowledgements.plist */,
+				B5B1EE5171F606490D7F38591ADDE2E1 /* Pods-MvvmDemo-dummy.m */,
+				6A1DAA79557758C0978A0D9C0A270A66 /* Pods-MvvmDemo-frameworks.sh */,
+				ED641432432FB610DF035263A6D931E4 /* Pods-MvvmDemo-resources.sh */,
+				5A0761325CE5A8C4D6F4F0495CCB91F9 /* Pods-MvvmDemo.debug.xcconfig */,
+				9BA236A6907D098C556FA93FA676412A /* Pods-MvvmDemo.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-MvvmDemo";
+			path = "Target Support Files/Pods-MvvmDemo";
 			sourceTree = "<group>";
 		};
 		AF72D6CA2D27D8DB2E67767E026D0E6B /* EasyFoundation */ = {
@@ -685,16 +736,26 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		EECDD0047D4C0DBB60E131E39350BD56 /* Products */ = {
+		EBA286EB274A57160BBDA300E5AA0060 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				188D41CC88C55B947096FA18ADD13BEB /* libEasyFoundation.a */,
-				3CC68A0078E8E10F671789170A975B60 /* libEasyReact.a */,
-				80D709325248C38CA0D59AFF03BBF236 /* libEasySequence.a */,
-				06F385596465228066A8F1C0AB5C7664 /* libEasyTuple.a */,
-				FF867733DBF43D720ACC2F10C2C6F775 /* libPods-MvvmDemo.a */,
+				B307534C9186BCD3058E22A22F3F321B /* libEasyFoundation.a */,
+				DAC577EB0F150B246AE43B2D0DABDF2D /* libEasyReact.a */,
+				76AC8B043163E9E13D0385874282A3DF /* libEasySequence.a */,
+				CA1DFED5D2498DB7A2FE4CDDA7795ADF /* libEasyTuple.a */,
+				59660CC04CD5B116AF53A10528A0FA95 /* libPods-MvvmDemo.a */,
+				1A4947B02ABCBCAD802E8FD41AC68EDA /* libPods-MvvmDemoTests.a */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		EEA68C449599246437B2366147606DF7 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8F829A9DC09FC2DC1B3AB6153712629C /* Pods-MvvmDemo */,
+				3081BF6E655C6CC2DC6C682262810372 /* Pods-MvvmDemoTests */,
+			);
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 		FE1A809C8CEF7A9B360951E4EC9C2D78 /* Support Files */ = {
@@ -835,7 +896,27 @@
 			);
 			name = EasySequence;
 			productName = EasySequence;
-			productReference = 80D709325248C38CA0D59AFF03BBF236 /* libEasySequence.a */;
+			productReference = 76AC8B043163E9E13D0385874282A3DF /* libEasySequence.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		373A295A28759A0D2E3D13E6DEC5A4B7 /* Pods-MvvmDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B7177AA4F6977E676183D5DBF254D1A /* Build configuration list for PBXNativeTarget "Pods-MvvmDemoTests" */;
+			buildPhases = (
+				0EC208613E9A0DDF632B1199A5229F52 /* Sources */,
+				849F5AA2E757200965F2255FE48D993B /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				783C41CA68ADE7DABF9B7D4834526007 /* PBXTargetDependency */,
+				77711E74B06B1BB41E37E20BF85359B0 /* PBXTargetDependency */,
+				4024BFEE9E5C1B275087E45A21D7DB74 /* PBXTargetDependency */,
+				15FD1947D705F4290181AD6736A8205A /* PBXTargetDependency */,
+			);
+			name = "Pods-MvvmDemoTests";
+			productName = "Pods-MvvmDemoTests";
+			productReference = 1A4947B02ABCBCAD802E8FD41AC68EDA /* libPods-MvvmDemoTests.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		429BE0C2BB088867312136A905D989F5 /* EasyFoundation */ = {
@@ -854,7 +935,7 @@
 			);
 			name = EasyFoundation;
 			productName = EasyFoundation;
-			productReference = 188D41CC88C55B947096FA18ADD13BEB /* libEasyFoundation.a */;
+			productReference = B307534C9186BCD3058E22A22F3F321B /* libEasyFoundation.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		5E93F1BB5B46391924F0F0A373E9D5F4 /* EasyReact */ = {
@@ -874,7 +955,7 @@
 			);
 			name = EasyReact;
 			productName = EasyReact;
-			productReference = 3CC68A0078E8E10F671789170A975B60 /* libEasyReact.a */;
+			productReference = DAC577EB0F150B246AE43B2D0DABDF2D /* libEasyReact.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		A90BF676E6322799429E95CD28D919FE /* EasyTuple */ = {
@@ -891,7 +972,7 @@
 			);
 			name = EasyTuple;
 			productName = EasyTuple;
-			productReference = 06F385596465228066A8F1C0AB5C7664 /* libEasyTuple.a */;
+			productReference = CA1DFED5D2498DB7A2FE4CDDA7795ADF /* libEasyTuple.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 		C6E517712FB80BC8879D80C1F23B96F9 /* Pods-MvvmDemo */ = {
@@ -911,7 +992,7 @@
 			);
 			name = "Pods-MvvmDemo";
 			productName = "Pods-MvvmDemo";
-			productReference = FF867733DBF43D720ACC2F10C2C6F775 /* libPods-MvvmDemo.a */;
+			productReference = 59660CC04CD5B116AF53A10528A0FA95 /* libPods-MvvmDemo.a */;
 			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
@@ -931,7 +1012,7 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = EECDD0047D4C0DBB60E131E39350BD56 /* Products */;
+			productRefGroup = EBA286EB274A57160BBDA300E5AA0060 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -940,11 +1021,20 @@
 				11DCC7BA0C328C3160B8B7D1C972FA9A /* EasySequence */,
 				A90BF676E6322799429E95CD28D919FE /* EasyTuple */,
 				C6E517712FB80BC8879D80C1F23B96F9 /* Pods-MvvmDemo */,
+				373A295A28759A0D2E3D13E6DEC5A4B7 /* Pods-MvvmDemoTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		0EC208613E9A0DDF632B1199A5229F52 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7CDB4A79AC05AFE0203632BC5BB596B2 /* Pods-MvvmDemoTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		403D66AA17BB479366B490F6810480A5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -1050,6 +1140,18 @@
 			target = A90BF676E6322799429E95CD28D919FE /* EasyTuple */;
 			targetProxy = 5A36B13E2A2DEEF8E07946B0236609A4 /* PBXContainerItemProxy */;
 		};
+		15FD1947D705F4290181AD6736A8205A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyTuple;
+			target = A90BF676E6322799429E95CD28D919FE /* EasyTuple */;
+			targetProxy = 79C9125502861A3E53557C60726BA99D /* PBXContainerItemProxy */;
+		};
+		4024BFEE9E5C1B275087E45A21D7DB74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasySequence;
+			target = 11DCC7BA0C328C3160B8B7D1C972FA9A /* EasySequence */;
+			targetProxy = E5EC083179A76E899F2BC483E5498A83 /* PBXContainerItemProxy */;
+		};
 		4AF0E19AEC8F4D9BFF4ECBF43F49D1BC /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EasySequence;
@@ -1068,11 +1170,23 @@
 			target = 429BE0C2BB088867312136A905D989F5 /* EasyFoundation */;
 			targetProxy = DFA4AEB9FFE847D945DF373357BD77E4 /* PBXContainerItemProxy */;
 		};
+		77711E74B06B1BB41E37E20BF85359B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyReact;
+			target = 5E93F1BB5B46391924F0F0A373E9D5F4 /* EasyReact */;
+			targetProxy = 395971543A7B6A02BDE9CBF5981EB8AB /* PBXContainerItemProxy */;
+		};
 		77C60A30CB6B588C48C006F243000D42 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EasyFoundation;
 			target = 429BE0C2BB088867312136A905D989F5 /* EasyFoundation */;
 			targetProxy = 18E0B9779301255A3BCD2F8751F24361 /* PBXContainerItemProxy */;
+		};
+		783C41CA68ADE7DABF9B7D4834526007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyFoundation;
+			target = 429BE0C2BB088867312136A905D989F5 /* EasyFoundation */;
+			targetProxy = F9F591F3BDAF5A2DA7578DF1F13CB8C8 /* PBXContainerItemProxy */;
 		};
 		957029E20E4FCCBAA2CDBCE56AEF880E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
@@ -1101,9 +1215,52 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		018CBB73910989F9EF9590E62C704F7A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BC4792F6C945F223BDED07A0454DF9A /* Pods-MvvmDemoTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0F587ADA14A29A49794D4907CA3480FC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3B99D4BBE3A9C32BBAAE1D7183FD4156 /* Pods-MvvmDemoTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MACH_O_TYPE = staticlib;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		10201DFECA3308AFE1A9A4A2F1A04902 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2CE858485F4E338D29F8FBE1E0EE1777 /* Pods-MvvmDemo.release.xcconfig */;
+			baseConfigurationReference = 9BA236A6907D098C556FA93FA676412A /* Pods-MvvmDemo.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1236,7 +1393,7 @@
 		};
 		98F722D9A72F8302D78220D2E4C023FD /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A206259BDE63F8CF0691E4495CCF7A2D /* Pods-MvvmDemo.debug.xcconfig */;
+			baseConfigurationReference = 5A0761325CE5A8C4D6F4F0495CCB91F9 /* Pods-MvvmDemo.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
@@ -1461,6 +1618,15 @@
 			buildConfigurations = (
 				1EE19F5DD95931924296F637BF18BD8F /* Debug */,
 				F4568DEE257655D290C2B9CEAB37C934 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3B7177AA4F6977E676183D5DBF254D1A /* Build configuration list for PBXNativeTarget "Pods-MvvmDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F587ADA14A29A49794D4907CA3480FC /* Debug */,
+				018CBB73910989F9EF9590E62C704F7A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
