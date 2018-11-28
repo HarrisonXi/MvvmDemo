@@ -7,11 +7,9 @@
 //
 
 #import <XCTest/XCTest.h>
-#import "Presenter.h"
+#import "ViewModel.h"
 
-@interface MvvmDemoTests : XCTestCase <PresenterDelegate>
-
-@property (nonatomic, assign) BOOL loginEnabled;
+@interface MvvmDemoTests : XCTestCase
 
 @end
 
@@ -28,17 +26,19 @@
 }
 
 - (void)testLoginEnabled {
-    Presenter *presenter = [Presenter new];
-    presenter.delegate = self;
-    
-    [presenter updateUsername:@"aaaa"];
-    NSAssert(self.loginEnabled == NO, @"Error");
-    [presenter updatePassword:@"aaaaaaaa"];
-    NSAssert(self.loginEnabled == YES, @"Error");
-}
-
-- (void)updateLoginEnabled:(BOOL)enabled {
-    self.loginEnabled = enabled;
+    ViewModel *viewModel = [ViewModel new];
+    viewModel.username = @"aaaa";
+    NSAssert(viewModel.usernameInputState == InputStateValid, @"Error");
+    NSAssert(viewModel.passwordInputState == InputStateEmpty, @"Error");
+    NSAssert(viewModel.loginEnabled == NO, @"Error");
+    viewModel.password = @"aaaaaaaa";
+    NSAssert(viewModel.usernameInputState == InputStateValid, @"Error");
+    NSAssert(viewModel.passwordInputState == InputStateValid, @"Error");
+    NSAssert(viewModel.loginEnabled == YES, @"Error");
+    viewModel.username = @"aaa";
+    NSAssert(viewModel.usernameInputState == InputStateInvalid, @"Error");
+    NSAssert(viewModel.passwordInputState == InputStateValid, @"Error");
+    NSAssert(viewModel.loginEnabled == NO, @"Error");
 }
 
 @end
