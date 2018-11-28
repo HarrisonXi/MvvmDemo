@@ -13,6 +13,7 @@
 		9226AC3A21AD34340084B166 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9226AC3921AD34340084B166 /* Assets.xcassets */; };
 		9226AC3D21AD34340084B166 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9226AC3B21AD34340084B166 /* LaunchScreen.storyboard */; };
 		9226AC4021AD34340084B166 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9226AC3F21AD34340084B166 /* main.m */; };
+		9226AC4821AE45470084B166 /* Presenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 9226AC4721AE45470084B166 /* Presenter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9226AC3C21AD34340084B166 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9226AC3E21AD34340084B166 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9226AC3F21AD34340084B166 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9226AC4621AE45470084B166 /* Presenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Presenter.h; sourceTree = "<group>"; };
+		9226AC4721AE45470084B166 /* Presenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Presenter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +65,8 @@
 				9226AC3121AD34320084B166 /* AppDelegate.m */,
 				9226AC3321AD34320084B166 /* ViewController.h */,
 				9226AC3421AD34320084B166 /* ViewController.m */,
+				9226AC4621AE45470084B166 /* Presenter.h */,
+				9226AC4721AE45470084B166 /* Presenter.m */,
 				9226AC3621AD34320084B166 /* Main.storyboard */,
 				9226AC3921AD34340084B166 /* Assets.xcassets */,
 				9226AC3B21AD34340084B166 /* LaunchScreen.storyboard */,
@@ -143,6 +148,7 @@
 			files = (
 				9226AC3521AD34320084B166 /* ViewController.m in Sources */,
 				9226AC4021AD34340084B166 /* main.m in Sources */,
+				9226AC4821AE45470084B166 /* Presenter.m in Sources */,
 				9226AC3221AD34320084B166 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
