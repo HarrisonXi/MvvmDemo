@@ -7,11 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "Presenter.h"
+#import "ViewModel.h"
 
-@interface ViewController () <UITextViewDelegate, PresenterDelegate>
+@interface ViewController () <UITextViewDelegate>
 
-@property (nonatomic, strong) Presenter *presenter;
+@property (nonatomic, strong) ViewModel *viewModel;
 
 @end
 
@@ -20,34 +20,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.loginButton.enabled = NO;
-    self.presenter = [Presenter new];
-    self.presenter.delegate = self;
-}
-
-- (BOOL)textField:(UITextField *)textField shouldChangeCharactersInRange:(NSRange)range replacementString:(nonnull NSString *)string
-{
-    if (textField == self.usernameTextField) {
-        [self.presenter updateUsername:[textField.text stringByReplacingCharactersInRange:range withString:string]];
-    } else {
-        [self.presenter updatePassword:[textField.text stringByReplacingCharactersInRange:range withString:string]];
-    }
-    return YES;
-}
-
-- (void)updateUsernameBgColor:(UIColor *)color
-{
-    self.usernameTextField.backgroundColor = color;
-}
-
-- (void)updatePasswordBgColor:(UIColor *)color
-{
-    self.passwordTextField.backgroundColor = color;
-}
-
-- (void)updateLoginEnabled:(BOOL)enabled
-{
-    self.loginButton.enabled = enabled;
+    self.viewModel = [ViewModel new];
+    // bind input signals
+    RAC(self.viewModel, username) = self.usernameTextField.rac_textSignal;
+    RAC(self.viewModel, password) = self.passwordTextField.rac_textSignal;
+    // bind output signals
+    RAC(self.usernameTextField, backgroundColor) = ConvertInputStateToColor(RACObserve(self.viewModel, usernameInputState));
+    RAC(self.passwordTextField, backgroundColor) = ConvertInputStateToColor(RACObserve(self.viewModel, passwordInputState));
+    RAC(self.loginButton, enabled) = RACObserve(self.viewModel, loginEnabled);
 }
 
 @end
